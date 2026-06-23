@@ -25,20 +25,30 @@
                 <div class="parametro-senha">
                     <h4 class="parametro-senha__titulo">Número de caracteres</h4>
                     <div class="parametro-senha-botoes">
-                        <button class="parametro-senha__botao">-</button>
-                        <p class="parametro-senha__texto">12</p>
-                        <button class="parametro-senha__botao">+</button>
+                        <button id="diminuir-tamanho" class="parametro-senha__botao" type="button">-</button>
+                        <p id="tamanho-senha" class="parametro-senha__texto">12</p>
+                        <button id="aumentar-tamanho" class="parametro-senha__botao" type="button">+</button>
                     </div>
-                </div>               
-                <div class="parametro-senha">
-                    <h4 class="parametro-senha__titulo">Características da senha</h4>
                 </div>
-                <div class="parametro-senha">
+                <div class="parametro-senha parametro-senha--opcoes">
+                    <h4 class="parametro-senha__titulo">Caracteres</h4>
+                    <label><input id="incluir-maiusculas" type="checkbox" checked> Maiúsculas</label>
+                    <label><input id="incluir-minusculas" type="checkbox" checked> Minúsculas</label>
+                    <label><input id="incluir-numeros" type="checkbox" checked> Números</label>
+                    <label><input id="incluir-simbolos" type="checkbox" checked> Símbolos</label>
+                </div>
+                <div class="parametro-senha parametro-senha--forca">
                     <h4 class="parametro-senha__titulo">Força da senha</h4>
+                    <p id="forca-senha">Moderada</p>
                 </div>
+            </div>
+            <div class="parametro-gerar">
+                <button id="gerar-senha" type="button">Gerar senha</button>
+                <button id="copiar-senha" type="button">Copiar</button>
             </div>
         </div>
     </section>
+    <script src="script.js"></script>
 </body>
 
 </html>
